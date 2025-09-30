@@ -116,6 +116,57 @@ a {
   margin: 0 0 35px 0;
 }
 
+/*searchbar*/
+form {
+  display: flex;
+}
+
+.search {
+  padding: 15px;
+  border: 1px solid #f2f2f2;
+  border-right: none;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.submit {
+  background-color: #0065fc;
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 0 15px 15px 0;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.icon-location {
+  background-color: #f2f2f2;
+  padding: 15px 18px;
+  border-radius: 15px 0 0 15px;
+  display: flex;
+  align-items: center;
+}
+
+.icon-location i {
+  color: black;
+}
+
+.search {
+  border-radius: 0;
+}
+
+.search::placeholder {
+  color: black;
+  opacity: 1;
+}
+
+form {
+  display: flex;
+  width: 377px;
+  height: 49px;
+}
+
 .card {
   background-color: white;
   border-radius: 20px;
