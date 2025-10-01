@@ -90,7 +90,7 @@ a {
 .section-search {
   width: 100%;
   min-height: 281px;
-  margin-top: 30px;
+  margin: 0 0 35px 0;
 }
 
 .section-search h1 {
@@ -101,7 +101,7 @@ a {
 
 .section-search p {
   font-size: 16px;
-  margin: 0 0 35px 0;
+  margin: 30px 0 35px 0;
 }
 
 /*searchbar*/
@@ -109,6 +109,7 @@ form {
   display: flex;
   width: 377px;
   height: 49px;
+  margin-bottom: 35px;
 }
 
 .search {
@@ -149,6 +150,74 @@ form {
 .search::placeholder {
   color: black;
   opacity: 1;
+}
+
+/*Ajout de la FilterBar*/
+.filters {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 35px;
+}
+
+.filters h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.filter-buttons {
+  display: flex;
+  width: auto;
+  height: 50px;
+  gap: 15px;
+}
+
+.filter-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 4px 19px;
+  border: 2px solid #d9d9d9;
+  border-radius: 25px;
+  background-color: white;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 17px;
+  transition: background-color 0.3s;
+}
+
+.filter-btn:hover {
+  background-color: var(--filter-bg-color);
+}
+
+/*Ajout info bar*/
+.info-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #d9d9d9;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.info-icon i {
+  font-size: 10px;
+  color: var(--main-color);
+}
+
+.info-bar {
+  display: flex;
+  align-items: center; /* ← Assure l'alignement vertical */
+  gap: 10px;
+  margin-bottom: 35px;
+}
+
+.info-bar p {
+  margin: 0; /* ← IMPORTANT : supprime les marges par défaut */
+  font-size: 16px;
+  line-height: 1.2; /* ← AJOUTER : contrôle la hauteur de ligne */
 }
 
 .card {
