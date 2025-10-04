@@ -273,7 +273,7 @@ form {
 .hebergements-cards .card {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: 207px;
 }
 .hebergements-cards img {
   width: 100%;
