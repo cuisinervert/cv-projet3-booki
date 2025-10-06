@@ -21,6 +21,7 @@ body {
 .main-container {
   width: 100%;
   max-width: 1440px;
+  min-width: 1025px;
   padding: 0 50px;
   box-sizing: border-box;
 }
@@ -35,7 +36,6 @@ a {
   justify-content: space-between;
   align-items: flex-start;
   background-color: #ffffff;
-  width: 99.5%;
   height: 79px;
   padding: 0;
 }
@@ -117,8 +117,13 @@ form {
   padding: 10px 10px 10px 20px;
   border: 1px solid #f2f2f2;
   border-right: none;
+  border-radius: 0;
   font-size: 18px;
   font-weight: 700;
+}
+.search::placeholder {
+  color: black;
+  opacity: 1;
 }
 
 .submit {
@@ -144,15 +149,6 @@ form {
   color: black;
 }
 
-.search {
-  border-radius: 0;
-}
-
-.search::placeholder {
-  color: black;
-  opacity: 1;
-}
-
 /*Ajout de la FilterBar*/
 .filters {
   display: flex;
@@ -161,7 +157,7 @@ form {
   margin-bottom: 35px;
 }
 
-.filters h3 {
+.filters h2 {
   font-size: 18px;
   font-weight: 700;
   margin: 0;
@@ -405,9 +401,10 @@ form {
 .footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  gap: 35px;
   background-color: var(--main-bg-color);
-  padding: 20px 50px;
+  padding: 20px;
+  margin-top: 30px;
 }
 
 .footer-column {
@@ -419,7 +416,7 @@ form {
 .footer-column h3 {
   font-size: 18px;
   font-weight: 700;
-  margin: 0 0 15px 0;
+  margin: 0;
 }
 
 .footer-column a {
