@@ -12,16 +12,22 @@
 .fa-solid {
   color: var(--main-color);
 }
+html {
+  background-color: #d3d3d3;
+}
 
 body {
   display: flex;
   justify-content: center;
+  background-color: #ffffff;
+  max-width: 1440px;
+  min-width: 1025px;
+  margin: 0 auto;
 }
 
 .main-container {
   width: 100%;
-  max-width: 1440px;
-  min-width: 1025px;
+
   padding: 0 50px;
   box-sizing: border-box;
 }
